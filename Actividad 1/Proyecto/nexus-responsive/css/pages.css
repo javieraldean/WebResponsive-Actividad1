@@ -1,0 +1,224 @@
+.featured {
+  padding: 1rem 0 2rem;
+}
+
+.catalog-page {
+  min-height: 70vh;
+}
+
+.catalog-controls {
+  padding: 1rem 0 1.5rem;
+}
+
+.catalog-controls__top {
+  margin-bottom: 1rem;
+}
+
+.filters-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font: inherit;
+  background: #ffffff;
+}
+
+.catalog-results {
+  padding-bottom: 2rem;
+}
+
+.detail-page {
+  min-height: 70vh;
+}
+
+.breadcrumb-section {
+  padding: 1.25rem 0 0;
+}
+
+.back-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.book-detail {
+  padding: 1.5rem 0 2rem;
+}
+
+.book-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.book-detail__media img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.book-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.book-detail__price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.book-author,
+.book-description {
+  margin: 0;
+}
+
+.book-meta {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.book-detail__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.related-books {
+  padding-bottom: 2rem;
+}
+
+.cart-page {
+  min-height: 70vh;
+}
+
+.cart-section {
+  padding: 1rem 0 2rem;
+}
+
+.cart-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item,
+.reservation-item {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item__media img,
+.reservation-item__media img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: var(--radius);
+}
+
+.cart-item__info,
+.cart-item__actions,
+.reservation-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cart-summary {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.cart-summary__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn-link {
+  background: transparent;
+  color: var(--color-primary);
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: flex-start;
+}
+
+.reservations-section {
+  padding-bottom: 2rem;
+}
+
+.reservations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featured h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.section-heading p {
+  color: #5b667a;
+  margin: 0;
+}

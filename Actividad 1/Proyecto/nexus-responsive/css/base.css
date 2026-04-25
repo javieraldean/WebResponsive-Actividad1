@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+.eyebrow {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+}
+
+:focus-visible {
+  outline: 3px solid #C97B63;
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #C97B63;
+}
+
+img {
+  border-radius: 10px;
+}

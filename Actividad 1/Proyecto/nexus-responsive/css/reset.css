@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+  .book-detail-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .book-detail__media,
+  .book-detail__info {
+    flex: 1;
+  }
+
+  .book-detail__actions {
+    flex-direction: row;
+  }
+
+  .cart-item,
+  .reservation-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cart-item__media,
+  .reservation-item__media {
+    flex: 0 0 160px;
+  }
+
+  .cart-item__info,
+  .reservation-item__info {
+    flex: 1;
+  }
+
+  .cart-item__actions {
+    flex: 0 0 180px;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cart-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .cart-items-panel {
+    flex: 2;
+  }
+
+  .cart-summary {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+  }
+}

@@ -1,0 +1,147 @@
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    flex: 1 1 200px;
+  }
+
+  .footer-nav,
+  .footer-contact,
+  .footer-social {
+    flex: 1 1 130px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+    position: static;
+    width: auto;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .nav-list li + li {
+    border-top: 0;
+  }
+
+  .nav-list a {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+  }
+
+  .hero-text,
+  .hero-media {
+    flex: 1;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .books-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .book-card {
+    width: calc(50% - 0.75rem);
+  }
+
+  .book-card__actions {
+    flex-direction: row;
+  }
+
+  .filters-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+  }
+
+  .filter-group {
+    flex: 1 1 220px;
+  }
+
+  .filter-group--actions {
+    flex: 0 0 auto;
+  }
+
+  .book-detail-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .book-detail__media,
+  .book-detail__info {
+    flex: 1;
+  }
+
+  .book-detail__actions {
+    flex-direction: row;
+  }
+
+  .cart-item,
+  .reservation-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cart-item__media,
+  .reservation-item__media {
+    flex: 0 0 160px;
+  }
+
+  .cart-item__info,
+  .reservation-item__info {
+    flex: 1;
+  }
+
+  .cart-item__actions {
+    flex: 0 0 180px;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-card {
+    width: calc(33.333% - 0.9rem);
+  }
+
+  .cart-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .cart-items-panel {
+    flex: 2;
+  }
+
+  .cart-summary {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+  }
+}
