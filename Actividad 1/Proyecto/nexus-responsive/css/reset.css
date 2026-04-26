@@ -1,53 +1,40 @@
-@media (min-width: 768px) {
-  .book-detail-card {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+/* =============================================
+   RESET — box-sizing border-box global
+   Incluye el borde y padding dentro del ancho
+   declarado: flex-basis, width, etc. son totales.
+   ============================================= */
 
-  .book-detail__media,
-  .book-detail__info {
-    flex: 1;
-  }
-
-  .book-detail__actions {
-    flex-direction: row;
-  }
-
-  .cart-item,
-  .reservation-item {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .cart-item__media,
-  .reservation-item__media {
-    flex: 0 0 160px;
-  }
-
-  .cart-item__info,
-  .reservation-item__info {
-    flex: 1;
-  }
-
-  .cart-item__actions {
-    flex: 0 0 180px;
-    align-items: flex-end;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (min-width: 1024px) {
-  .cart-layout {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  .cart-items-panel {
-    flex: 2;
-  }
+body {
+  -webkit-font-smoothing: antialiased;
+}
 
-  .cart-summary {
-    flex: 1;
-    position: sticky;
-    top: 100px;
-  }
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }

@@ -33,7 +33,8 @@ function createBookCard(book) {
         <div class="book-card__footer">
           <p class="book-card__price">${price}</p>
           <button class="btn btn-primary btn-sm"
-            onclick="addBookToCartFromCard(${id})">
+            data-book="${encodeURIComponent(JSON.stringify(book))}"
+            onclick="addToCartDirect(this)">
             Añadir
           </button>
         </div>

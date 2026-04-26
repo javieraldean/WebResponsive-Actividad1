@@ -53,19 +53,13 @@ async function loadFeaturedBooks() {
   }
 }
 
-async function addBookToCartFromCard(bookId) {
+function addToCartDirect(btn) {
   try {
-    const books = await getBooks();
-    const selectedBook = books.find(book => String(book.id) === String(bookId));
-    if (!selectedBook) {
-      showMessage("No se encontró el libro seleccionado.");
-      return;
-    }
-    addToCart(selectedBook);
+    const book = JSON.parse(decodeURIComponent(btn.dataset.book));
+    addToCart(book);
     updateCartCount();
     showMessage("Libro añadido al carrito correctamente.");
-  } catch (error) {
-    console.error(error);
+  } catch {
     showMessage("No fue posible añadir el libro al carrito.");
   }
 }
