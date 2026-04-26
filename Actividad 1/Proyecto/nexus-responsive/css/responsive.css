@@ -80,13 +80,6 @@
     max-width: calc(50% - 0.625rem);
   }
 
-  /* Featured en home: 3 columnas desde tablet
-     basis = (100% - 2 gaps) / 3 exacto */
-  #featured-books .book-card {
-    flex: 1 1 calc(33.333% - 0.834rem);
-    max-width: calc(33.333% - 0.834rem);
-  }
-
   /* --- Book card actions --- */
   .book-card__actions {
     flex-direction: row;
