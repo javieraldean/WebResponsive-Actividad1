@@ -92,15 +92,11 @@ nexus-responsive/
 │   ├── catalogo.js      # Lógica de filtros y listado del catálogo
 │   ├── detalle.js       # Carga y renderizado del detalle del libro
 │   └── carrito.js       # Gestión y visualización del carrito
-├── assets/
-│   ├── img/books/       # Portadas de libros
-│   ├── img/hero/        # Imágenes del hero
-│   ├── img/icons/       # Iconos SVG
-│   └── img/logo/        # Favicon y logo
-└── docs/
-    ├── reparto-tareas.md
-    ├── memoria-tecnica.md
-    └── guion-videomemoria.md
+└── assets/
+    ├── img/books/       # Portadas de libros
+    ├── img/hero/        # Imágenes del hero
+    ├── img/icons/       # Iconos SVG
+    └── img/logo/        # Favicon y logo
 ```
 
 ---
