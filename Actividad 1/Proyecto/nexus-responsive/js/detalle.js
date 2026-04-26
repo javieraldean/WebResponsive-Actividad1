@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function renderBookDetail(book) {
   const container = document.getElementById("book-detail-content");
-  const image = book.image || "assets/img/books/book-placeholder.jpg";
+  const image = getBookImage(book);
 
   container.innerHTML = `
     <div class="detail-layout">
