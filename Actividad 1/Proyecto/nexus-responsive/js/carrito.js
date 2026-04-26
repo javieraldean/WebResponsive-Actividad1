@@ -55,19 +55,20 @@ function renderCartPage() {
   cartItemsContainer.innerHTML = cart.map(item => `
     <article class="cart-item">
       <div class="cart-item__media">
-        <img src="${item.image || 'assets/img/books/book-placeholder.jpg'}" alt="Portada del libro ${escapeHtml(item.title)}">
+        <img src="${getBookImage(item)}" alt="Portada del libro ${escapeHtml(item.title)}">
       </div>
 
       <div class="cart-item__info">
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.author || "Autor no disponible")}</p>
-        <p>${formatPrice(item.price)}</p>
+        ${item.category ? `<span class="book-card__category">${escapeHtml(item.category)}</span>` : ""}
+        <h3 class="book-card__title">${escapeHtml(item.title)}</h3>
+        <p class="book-card__author">${escapeHtml(item.author || "Autor no disponible")}</p>
+        <p class="book-card__price">${formatPrice(item.price)}</p>
       </div>
 
       <div class="cart-item__actions">
         <p>Cantidad: ${item.quantity || 1}</p>
         <p>Subtotal: ${formatPrice((item.price || 0) * (item.quantity || 1))}</p>
-        <button class="btn btn-link" type="button" onclick="removeCartItem('${item.id}')">Eliminar</button>
+        <button class="btn btn-danger btn-sm" type="button" onclick="removeCartItem('${item.id}')">Eliminar</button>
       </div>
     </article>
   `).join("");
@@ -104,7 +105,7 @@ function renderReservations() {
   reservationsList.innerHTML = reservations.map(item => `
     <article class="reservation-item">
       <div class="reservation-item__media">
-        <img src="${item.image || 'assets/img/books/book-placeholder.jpg'}" alt="Portada del libro ${escapeHtml(item.title)}">
+        <img src="${getBookImage(item)}" alt="Portada del libro ${escapeHtml(item.title)}">
       </div>
 
       <div class="reservation-item__info">

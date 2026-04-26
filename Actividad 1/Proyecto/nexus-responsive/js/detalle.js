@@ -46,23 +46,21 @@ function renderBookDetail(book) {
   container.innerHTML = `
     <div class="detail-layout">
       <div class="detail-media">
-        <img src="${image}" alt="${book.title}">
+        <img src="${image}" alt="${escapeHtml(book.title)}">
       </div>
       <div class="detail-info">
-        <span class="detail-category">${book.category || "General"}</span>
-        <h1 class="detail-title">${book.title}</h1>
-        <p class="detail-author">${book.author || "Autor no disponible"}</p>
-        <p class="detail-price">${formatPrice(book.price)}</p>
+        <span class="detail-category">${escapeHtml(book.category || "General")}</span>
+        <h1 class="detail-title">${escapeHtml(book.title)}</h1>
+        <div class="detail-meta">
+          <p class="detail-author">${escapeHtml(book.author || "Autor no disponible")}</p>
+          <p class="detail-price">${formatPrice(book.price)}</p>
+        </div>
         <p class="detail-description">
-          ${book.description || "Este libro forma parte del catálogo académico de Nexus, orientado al aprendizaje, desarrollo profesional y crecimiento personal."}
+          ${escapeHtml(book.description || "Este libro forma parte del catálogo académico de Nexus, orientado al aprendizaje, desarrollo profesional y crecimiento personal.")}
         </p>
         <div class="detail-actions">
-          <button class="btn btn-primary" id="add-to-cart-btn">
-            Comprar
-          </button>
-          <button class="btn btn-secondary" id="reserve-book-btn">
-            Reservar
-          </button>
+          <button class="btn btn-primary" id="add-to-cart-btn">Comprar</button>
+          <button class="btn btn-secondary" id="reserve-book-btn">Reservar</button>
         </div>
       </div>
     </div>

@@ -278,5 +278,17 @@
   to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
+/* --- Danger button (Eliminar, acciones destructivas) --- */
+.btn-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.btn-danger:hover {
+  background: #fecaca;
+  opacity: 1;
+}
+
 /* --- Utility --- */
 .hidden { display: none; }

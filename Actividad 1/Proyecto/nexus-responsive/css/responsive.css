@@ -122,6 +122,21 @@
     flex-direction: row;
   }
 
+  /* --- Detail rendered layout --- */
+  .detail-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .detail-media,
+  .detail-info {
+    flex: 1;
+  }
+
+  .detail-actions {
+    flex-direction: row;
+  }
+
   /* --- Cart items --- */
   .cart-item,
   .reservation-item {
